@@ -12,23 +12,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(children: <Widget>[
-            Container(
-                height: double.infinity,
-                width: 100,
-                color: Colors.red,
-                child: Text('Hello')),
-            Container(
-                height: 100,
-                width: 100,
-                margin: EdgeInsets.fromLTRB(50, 50, 50, 50),
-                color: Colors.yellow,
-                child: Text('Hello')),
-            Container(
-                height: double.infinity,
-                width: 100,
-                color: Colors.blue,
-                child: Text('Hello')),
+          child: Column(children: <Widget>[
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('images/download.png'),
+            ),
+            Text(
+              'Henry Ning',
+              style: TextStyle(
+                fontSize: 20,
+                color: Colors.white,
+                fontWeight: FontWeight.bold
+              )
+            ),
           ]),
         ),
       ),
